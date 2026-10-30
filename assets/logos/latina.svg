@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="latinaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="latinaRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="100%" stop-color="#d50000"/>
+    </linearGradient>
+    <filter id="latinaGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#ff1744" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="400" height="240" rx="20" fill="url(#latinaBg)" stroke="#334155" stroke-width="2"/>
+  <!-- Stylized L Emblem -->
+  <g transform="translate(60, 40)" filter="url(#latinaGlow)">
+    <circle cx="50" cy="50" r="46" fill="url(#latinaRed)"/>
+    <path d="M 38 24 L 48 24 L 48 64 L 68 64 L 68 74 L 38 74 Z" fill="#ffffff"/>
+    <path d="M 48 30 Q 64 30 64 46 Q 64 54 58 58" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- Text Branding -->
+  <text x="180" y="85" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="2">LATINA</text>
+  <rect x="180" y="98" width="60" height="4" rx="2" fill="url(#latinaRed)"/>
+  <text x="180" y="125" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="18" font-weight="700" fill="#94a3b8" letter-spacing="4">TELEVISIÓN • CANAL 2</text>
+  <g transform="translate(60, 165)">
+    <rect width="280" height="28" rx="6" fill="#1e293b"/>
+    <text x="140" y="19" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="1">¡VIVE LA EMOCIÓN EN VIVO!</text>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+QUIERO QUE BORRES TODOS LOS CANALES ACTUALES DE LA APLICACION Y REEMPLAZES POR ESTAS DIRECCIONES QUE ESTAN AQUI A LA APLICACION  IPTV, REEMPAQUETA Y DEJA LISTO PARA INSTALAR,  LO DEMAS DEJA COMO ESTA
+
+1-LATINA TV- :http:\\190.93.224.42\LATINA\index.m3u8
+
+2-AMERICA TV : http:\\190.93.224.42\AMERICA-TV\index.m3u8
+
+3-TV PERU : http:\\190.93.224.42\TV-PERU-NOTICIAS\index.m3u8
+
+4-EXITOSA : http:\\190.93.224.42\EXITOSA\index.m3u8
+
+5-RPP : http:\\190.93.224.42\RPP\index.m3u8
+
+6-PANAMERICANA : http:\\45.171.108.253:8888\PANAMERICANA\index.m3u8
+
+7- ATV : http:\\190.93.224.42\ATV\index.m3u8
+
+8 - WILLAX : http:\\190.93.224.42\WILLAX\index.m3u8
+
+9- DISCOVERY CHANNEL : http:\\45.171.64.30:6060\play\a032\index.m3u8
+
+10- DISNEY : http:\\45.134.141.161:2200\ARG\Disney_Channel\index.m3u8
+
+11- L1 MAX : http:\\190.93.224.42\LIGA-1-MAX\index.m3u8
+
+12 - HBO : http:\\45.171.64.30:6060\play\a00i\index.m3u8
+
+13 - GOLDEN EDGE : http:\\38.19.41.46:8081\GOLDENEDGE\index.m3u8
+
+14 - GOLDEN PLUS : http:\\45.5.118.152:8000\play\a03p\index.m3u8
+
+14 - AXN : http:\\181.78.8.199:8000\play\a0cu\index.m3u8
+
+16 - WARNER :http:\\38.134.250.110:8000\play\a029\index.m3u8
+
+17 - CINE PREMIUM :http:\\bantel-cdn1.iptvperu.tv:1935\btnscrtn\cinepremium.stream\playlist.m3u8
+
+18-  MAXCINE : https:\\live20.bozztv.com\giatvplayout7\giatv-208138\playlist.m3u8
+
+19 - MAXCINE FAMILIA : https:\\live20.bozztv.com\giatvplayout7\giatv-208817\playlist.m3u8
+
+20- MAXCINE KIDS : https:\\live20.bozztv.com\giatvplayout7\giatv-209909\playlist.m3u8
+
+21 -MEGACINE : https:\\cnn.hostlagarto.com\megacinetv\playlist.m3u8
+
+22- AVI REWINDS : http:\\45.70.201.81:8000\play\a010\index.m3u8
+
+23 - DE PELICULA : http:\\38.19.41.46:8081\DEPELICULA\index.m3u8
+
+24- CINE HISPANO : http:\\bantel-cdn1.iptvperu.tv:1935\btnscrtn\cinehispano.stream\playlist.m3u8
+
+25 - ANIMAL PLANET : http:\\190.128.214.97:64333\play\a01n\index.m3u8
+
+26 - TOONCAST : http:\\45.134.141.161:2200\ARG\Tooncast\index.m3u8
+
+27 - ENERGEEK WEB : https:\\cl-2.backend.energeek.cl\bkp\egretroweb\index.m3u8?token=IPTVgh26
+
+28 - ENERGEEK FAN : https:\\cl-2.backend.energeek.cl\bkp\egfan\mobile\index.m3u8?token=IPTVgh26
+
+29 - CINE FAMILIAR : http:\\bantel-cdn1.iptvperu.tv:1935\btnscrtn\cinefamiliar.stream\playlist.m3u8
+
+30 - HTV : http:\\45.134.141.161:2200\ARG\HTV\index.m3u8
+
+31 - TELEANGOL : https:\\pantera1-100gb-cl-movistar.dps.live\teleangolradio\teleangolradio.smil\playlist.m3u8
+
+32 - SUPERCABLE TV : http:\\191.102.39.254:5000\live\5up3r5\playlist.m3u8
+
+33 - SUPER CANAL : https:\\live-evg7.tv360.bitel.com.pe\bitel\supercanalSRT\playlist.m3u8
+
+34 - MAXCINE2 : https:\\live20.bozztv.com\giatvplayout7\giatv-209163\playlist.m3u8
+
+35 - MYTIME MOVIE MEXICO : https:\\appletree-mytime-samsungmexico.amagi.tv\playlist.m3u8
+
+36 -MY TIME SPAIN : https:\\appletree-mytimespain-rakuten.amagi.tv\playlist.m3u8
+
+37- CMAXCINE COMEDY  : https:\\live20.bozztv.com\giatvplayout7\giatv-208730\playlist.m3u8
+
+38 - CLARO CINEMA : http:\\158.172.217.18:8000\play\a00d\index.m3u8

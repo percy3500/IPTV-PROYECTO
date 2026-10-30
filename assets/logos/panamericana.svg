@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panamBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04202f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="panamBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="panamGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0ea5e9" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="400" height="240" rx="20" fill="url(#panamBg)" stroke="#334155" stroke-width="2"/>
+  <!-- Panamericana Globe Emblem -->
+  <g transform="translate(48, 42)" filter="url(#panamGlow)">
+    <circle cx="45" cy="45" r="45" fill="url(#panamBlue)"/>
+    <circle cx="45" cy="45" r="34" fill="none" stroke="#e0f2fe" stroke-width="3" opacity="0.9"/>
+    <path d="M 11 45 H 79" stroke="#e0f2fe" stroke-width="3" opacity="0.9"/>
+    <path d="M 45 11 C 25 30 25 60 45 79 C 65 60 65 30 45 11 Z" fill="none" stroke="#e0f2fe" stroke-width="3" opacity="0.9"/>
+  </g>
+  <!-- Text Branding -->
+  <text x="155" y="82" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="30" font-weight="900" fill="#ffffff" letter-spacing="1">PANAMERICANA</text>
+  <rect x="155" y="96" width="60" height="4" rx="2" fill="url(#panamBlue)"/>
+  <text x="155" y="124" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="17" font-weight="700" fill="#94a3b8" letter-spacing="3">TELEVISION</text>
+  <g transform="translate(48, 165)">
+    <rect width="304" height="28" rx="6" fill="#1e293b"/>
+    <text x="152" y="19" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="1">EL CANAL DE LAS NOTICIAS</text>
+  </g>
+</svg>

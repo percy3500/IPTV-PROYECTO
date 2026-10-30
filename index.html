@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PERCY TV - Canales en Vivo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div id="app" class="app-root">
+
+    <!-- VISTA 1: CATÁLOGO DE CANALES (CUADRÍCULA HORIZONTAL) -->
+    <div id="view-channels" class="view active">
+      <!-- HEADER CON NOMBRE DE LA APLICACIÓN GRANDE -->
+      <header class="topbar">
+        <div class="brand">
+          <h1 class="brand-title">PERCY TV</h1>
+          <span class="badge-live">EN VIVO</span>
+        </div>
+
+        <div class="topbar-right">
+          <div class="status-pill">
+            <span class="dot-live"></span>
+            <span id="channels-count-label">39 Canales en Vivo</span>
+          </div>
+          <div class="clock-box">
+            <span id="clock-time">--:--</span>
+            <span id="clock-date">Cargando...</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- CUADRÍCULA HORIZONTAL DE CANALES -->
+      <section class="channels-section">
+        <div class="channels-track" id="channels-container">
+          <!-- Renderizado dinámico de tarjetas 6 por fila -->
+        </div>
+      </section>
+
+      <!-- FOOTER CON LEYENDA Y CANAL EN FOCO -->
+      <footer class="remote-hints-bar">
+        <div class="hints-left">
+          <div class="hint-item">
+            <span class="key-badge">◄ ► ▲ ▼</span>
+            <span class="hint-label">Navegar</span>
+          </div>
+          <div class="hint-item">
+            <span class="key-badge key-ok">OK</span>
+            <span class="hint-label">Sintonizar</span>
+          </div>
+          <div class="hint-item">
+            <span class="key-badge">1 - 39</span>
+            <span class="hint-label">Canal directo</span>
+          </div>
+          <div class="hint-item">
+            <span class="key-badge">CH ▲/▼</span>
+            <span class="hint-label">Zapping</span>
+          </div>
+          <div class="hint-item">
+            <span class="key-badge key-back">ATRÁS</span>
+            <span class="hint-label">Salir</span>
+          </div>
+        </div>
+
+        <div class="footer-channel-preview" id="footer-channel-info">
+          <span class="footer-ch-num" id="footer-ch-num">01</span>
+          <span class="footer-ch-name" id="footer-ch-name">LATINA TV</span>
+          <span class="footer-ch-freq" id="footer-ch-freq">Canal 2 HD</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- VISTA 2: REPRODUCTOR DE VIDEO A PANTALLA COMPLETA -->
+    <div id="view-player" class="view hidden">
+      <!-- ELEMENTO DE VIDEO NATIVO WEBOS -->
+      <video id="tv-player" class="tv-video" tabindex="-1" playsinline webkit-playsinline autoplay preload="auto">
+        Tu televisor no soporta la reproducción de este formato de video.
+      </video>
+
+      <!-- OSD HEADER SUPERIOR -->
+      <div id="player-osd-top" class="player-osd-bar top">
+        <div class="osd-left">
+          <button class="btn-osd-back" id="btn-osd-back">
+            <span class="icon-back">◄</span>
+            <span>MENÚ DE CANALES [ATRÁS]</span>
+          </button>
+          <div class="osd-channel-meta">
+            <span class="osd-num" id="osd-channel-number">01</span>
+            <span class="osd-name" id="osd-channel-name">LATINA TV</span>
+            <span class="osd-freq" id="osd-channel-freq">Canal 2 HD</span>
+          </div>
+        </div>
+
+        <div class="osd-right">
+          <span class="badge-live-stream"><span class="dot-live"></span> PERCY TV EN VIVO</span>
+          <span class="osd-time" id="osd-clock-time">--:--</span>
+        </div>
+      </div>
+
+      <!-- OSD FOOTER INFERIOR -->
+      <div id="player-osd-bottom" class="player-osd-bar bottom">
+        <div class="osd-bottom-info">
+          <div class="osd-status-indicator">
+            <span class="pulse-indicator"></span>
+            <span id="osd-status-text">Señal conectada</span>
+          </div>
+          <div class="osd-current-slogan" id="osd-channel-slogan">¡Vive la emoción en vivo!</div>
+        </div>
+
+        <div class="osd-bottom-controls">
+          <button class="btn-osd-audio" id="btn-osd-audio">
+            <span class="icon-audio">♪</span>
+            <span>IDIOMA</span>
+            <span class="audio-track-label" id="audio-track-label">Pista 2 (Predeterminada)</span>
+          </button>
+          <div class="osd-hint-tag">
+            <span class="key-badge mini">►</span> Cambiar Idioma
+          </div>
+          <div class="osd-hint-tag">
+            <span class="key-badge mini">▲ / CH+</span> Canal siguiente
+          </div>
+          <div class="osd-hint-tag">
+            <span class="key-badge mini">▼ / CH-</span> Canal anterior
+          </div>
+          <div class="osd-hint-tag">
+            <span class="key-badge mini key-back">ATRÁS</span> Volver al Menú
+          </div>
+        </div>
+      </div>
+
+      <!-- MENÚ FLOTANTE DE IDIOMA DE AUDIO (FLECHA DERECHA) -->
+      <div id="audio-menu" class="audio-menu hidden">
+        <div class="audio-menu-title"><span class="audio-menu-icon">♪</span> SELECCIONAR IDIOMA</div>
+        <div class="audio-menu-list" id="audio-menu-list"></div>
+        <div class="audio-menu-hint">▲ ▼ elegir · OK aplicar · ATRÁS cerrar</div>
+      </div>
+
+      <!-- CUADRO DE BUFFER / CARGA PERFECTAMENTE CENTRADO -->
+      <div id="player-loader" class="player-overlay-state">
+        <div class="spinner-ring">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="loader-title" id="loader-title">Sintonizando señal en vivo...</div>
+        <div class="loader-subtitle" id="loader-subtitle">Conectando con PERCY TV</div>
+      </div>
+
+      <!-- CUADRO DE ERROR PERFECTAMENTE CENTRADO -->
+      <div id="player-error" class="player-overlay-state hidden">
+        <div class="error-icon">⚠️</div>
+        <div class="error-title">No se pudo cargar la señal</div>
+        <div class="error-desc" id="error-desc">El canal no responde o se perdió la conexión.</div>
+        <div class="error-actions">
+          <button class="btn-error-retry" id="btn-error-retry">REINTENTAR [OK]</button>
+          <button class="btn-error-back" id="btn-error-back">MENÚ DE CANALES [ATRÁS]</button>
+        </div>
+      </div>
+
+      <!-- NOTIFICACIÓN DE ZAPPING -->
+      <div id="player-zap-toast" class="zap-toast hidden">
+        <div class="zap-badge" id="zap-badge">01</div>
+        <div class="zap-info">
+          <div class="zap-name" id="zap-name">LATINA TV</div>
+          <div class="zap-category" id="zap-category">Sintonizando...</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS ES5 PARA COMPATIBILIDAD CON WEBOS 2.0+ -->
+  <script src="js/channels.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

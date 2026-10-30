@@ -1,0 +1,15 @@
+{
+  "id": "com.peru.canales.nacionales",
+  "version": "1.0.0",
+  "vendor": "Percy TV",
+  "type": "web",
+  "main": "index.html",
+  "title": "PERCY TV",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "bgColor": "#150426",
+  "iconColor": "#d946ef",
+  "resolution": "1920x1080",
+  "handlesRelaunch": true,
+  "requiredACG": []
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hboBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231042"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="hboAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#442082"/>
+    </linearGradient>
+    <filter id="hboGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#7c3aed" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="400" height="240" rx="20" fill="url(#hboBg)" stroke="#334155" stroke-width="2"/>
+  <g transform="translate(48, 42)" filter="url(#hboGlow)">
+    <rect width="90" height="90" rx="22" fill="url(#hboAcc)"/>
+    <text x="45" y="58" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="27" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">HBO</text>
+  </g>
+  <text x="155" y="82" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="1">HBO</text>
+  <rect x="155" y="96" width="60" height="4" rx="2" fill="url(#hboAcc)"/>
+  <text x="155" y="124" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="13" font-weight="700" fill="#94a3b8" letter-spacing="2">CABLE HD</text>
+  <g transform="translate(48, 165)">
+    <rect width="304" height="28" rx="6" fill="#1e293b"/>
+    <text x="152" y="19" font-family="'Segoe UI', 'Roboto', 'Arial', sans-serif" font-size="10" font-weight="600" fill="#7c3aed" text-anchor="middle" letter-spacing="1">PROGRAMACION PREMIUM</text>
+  </g>
+</svg>
